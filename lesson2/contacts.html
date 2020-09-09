@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Добавил немного оформления без отдельного CSS файла чтобы страница выглядела хоть немного привлекательнее,
+    чем с голым html -->
+    <style>
+        * {
+            margin: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .content {
+            min-height: calc(100% - 110px);
+            margin-bottom: -75px;
+        }
+
+        .content:after {
+            content: '';
+            display: block;
+        }
+
+        .content:after,
+        .footer {
+            height: 110px;
+        }
+
+        body {
+            background: #ffffff;
+            color: #222222;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .content,
+        .header,
+        .footer {
+            box-sizing: border-box;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .header,
+        .footer {
+            background: #fffacd;
+            color: black;
+            font-size: 14px;
+        }
+
+        .content p {
+            margin: 10px 0;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .address {
+            float: left;
+            margin: 40px;
+        }
+
+        .service {
+            float: center;
+            margin: 60px 40px;
+        }
+
+        .map {
+            float: right;
+        }
+    </style>
+    <!-- ___________________________________________________________________ -->
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a href="index.html">*Main</a></li>
+                <li><a href="contacts.html">*Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="address">
+            <h2>Contact Us</h2>
+            <p>Some additional information</p>
+            <img src="img/robot.jpg" alt="robot eats">
+        </div>
+        <br>
+        <div class="service">
+            <h4>Address</h4>
+            <p>USA Defense Pentagon, Washington, D.C.</p>
+            <h4>Phone</h4>
+            <ul>
+                <li><a href="tel:+1 703-697-1776">phone: +1 703-697-1776</a></li>
+                <li><a href="tel:+1 703-697-1777">phone: +1 703-697-1777</a></li>
+            </ul>
+            <br>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3106.279057867434!2d-77.05845558469144!3d38.87185677957462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b6df29ed2c27%3A0xaf83d0f8c013532f!2z0J_QtdC90YLQsNCz0L7QvQ!5e0!3m2!1sru!2sru!4v1599678539499!5m2!1sru!2sru"
+                    width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+            <h4>Online service</h4>
+            <ul>
+                <li><a href="https://www.usa.gov/federal-agencies/u-s-department-of-defense" target="_blank">our web
+                        site</a></li>
+                <li><a href="mailto:mail@mail.ru">e-mail: mail@mail.ru</a></li>
+            </ul>
+        </div>
+
+
+
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <h4>Send us message</h4>
+            <p>Full name <input name="username" type="text" placeholder="Vasya Pupkin" tabindex="1"></p>
+            <p>Email <input name="usermail" type="email" placeholder="vasya@gmail.com" tabindex="2"></p>
+            <p>Message</p>
+            <textarea name="message" tabindex="3"></textarea>
+            <div><button tabindex="4" type="submit">submit</button></div>
+        </form>
+    </div>
+    <div class="footer">
+        <h3>Contact information</h3>
+        <p>You can contact us 24/7:</p>
+        <hr>
+        <ul>
+            <li><a href="tel:88005005050">phone: 8(800)5005050</a></li>
+            <li><a href="mailto:mail@mail.ru">e-mail: mail@mail.ru</a></li>
+        </ul>
+        <p>All rights reserved &copy;</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Добавил немного оформления без отдельного CSS файла чтобы страница выглядела хоть немного привлекательнее,
+    чем с голым html -->
+    <style>
+        * {
+            margin: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .content {
+            min-height: calc(100% - 110px);
+            margin-bottom: -75px;
+        }
+
+        .content:after {
+            content: '';
+            display: block;
+        }
+
+        .content:after,
+        .footer {
+            height: 110px;
+        }
+
+        body {
+            background: #ffffff;
+            color: #222222;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .content,
+        .header,
+        .footer {
+            box-sizing: border-box;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .header,
+        .footer {
+            background: #fffacd;
+            color: black;
+            font-size: 14px;
+        }
+
+        .content p {
+            margin: 10px 0;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+    </style>
+    <!-- ___________________________________________________________________ -->
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a href="index.html">*Main</a></li>
+                <li><a href="contacts.html">*Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <h2>Main page</h2>
+        <p>Так как в задании ко второму уроку не было четко прописано, что должно быть в body на главной странице, то
+            пусть тут будет кот. Страница contacts выполена в соответствии с заданием</p>
+        <img src="img/Crying_Cat.jpg" alt="crying cat">
+    </div>
+    <div class="footer">
+        <h3>Contact information</h3>
+        <p>You can contact us 24/7:</p>
+        <hr>
+        <ul>
+            <li><a href="tel:88005005050">phone: 8(800)5005050</a></li>
+            <li><a href="mailto:mail@mail.ru">e-mail: mail@mail.ru</a></li>
+        </ul>
+        <p>All rights reserved &copy;</p>
+    </div>
+
+</body>
+
+</html>
