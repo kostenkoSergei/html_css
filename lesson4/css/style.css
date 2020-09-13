@@ -231,6 +231,7 @@ ul.ul-footer {
     min-height: 30%;
     padding: 5% 4% 4% 2%;
     margin: 3% -5% 3% 10%;
+    border-radius: 10px;
     background-color: #fff;
 }
 
@@ -242,9 +243,9 @@ ul.ul-footer {
     padding: 5% 4% 4% 2%;
     margin: 3% 10% 3% 3%;
     background-color: #fff;
-    -webkit-box-shadow: 14px 18px 21px 1px rgba(171, 237, 234, 1);
-    -moz-box-shadow: 14px 18px 21px 1px rgba(171, 237, 234, 1);
-    box-shadow: 14px 18px 21px 1px rgba(171, 237, 234, 1);
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 15px 5px #CBD5FF;
+    box-shadow: 5px 5px 15px 5px #CBD5FF;
 }
 
 .map {
