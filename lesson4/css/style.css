@@ -213,7 +213,7 @@ ul.ul-footer {
     background-color: rgb(32, 152, 207);
 }
 
-.contact-us p, h1 {
+.contact-us p, .contact-us h1 {
     color: white;
     text-align: center;
 }
