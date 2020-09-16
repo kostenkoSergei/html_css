@@ -10,7 +10,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
     height: 100%;
 }
@@ -67,6 +67,38 @@ body {
     color: #222222;
 }
 
+.project {}
+
+.project__item {
+    position: relative;
+    flex-grow: 1;
+}
+
+.project__parent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.project__item_margin {
+    margin-right: 32px;
+}
+
+.project__img {
+    width: 100%;
+}
+
+.project__text {
+    font-size: 32px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    position: absolute;
+    top: 64px;
+    right: 64px;
+}
+
 .top__text {
     width: 425px;
     height: 82px;
@@ -89,8 +121,24 @@ body {
     margin-top: 71px;
 }
 
+.bottom__button {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background: #5A98D0;
+    text-decoration: none;
+    padding: 15px 80px 15px 80px;
+    display: inline-block;
+    margin-top: 165px;
+    margin-right: 114px;
+    white-space: nowrap;
+}
+
 .what-we-do {
     padding-top: 64px;
+    display: flex;
 }
 
 .second-heading {
@@ -101,6 +149,8 @@ body {
     letter-spacing: 0.05em;
     color: #000000;
 }
+
+/* карточка ______________________________*/
 
 .card-box {
     display: flex;
@@ -134,22 +184,6 @@ body {
     align-self: center;
 }
 
-.image-wrapper {
-    position: relative;
-}
-
-.img1 {
-    position: absolute;
-    top: -10px;
-    right: 10px;
-}
-
-.img2 {
-    position: absolute;
-    top: 20px;
-    left: 100px;
-}
-
 .heading-mini {
     font-size: 20px;
     line-height: 30px;
@@ -159,81 +193,29 @@ body {
     margin-bottom: 14px;
 }
 
-.installation {
-    margin-top: 2%;
-    border-color: white;
-    min-height: 320px;
-    border-radius: 10px;
-    background-color: #00c4ff;
+/* ____________________________ */
+
+.bottom {
+    background: #316099;
+    height: 657px;
+    margin-top: 112px;
 }
 
-.two-elements {
+.bottom__offer {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 2% 3%;
-    display: flex;
-    min-height: 300px;
-    border: none;
-}
-
-.two-elements-content {
     box-sizing: border-box;
-    border: 1px solid #000;
-    width: 49%;
-    background-image: url("../img/cat4.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    border-radius: 10px;
+    padding-bottom: 96px;
+    border-bottom: 1px solid #FFFFFF;
 }
 
-.bottom-wrapper {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(66, 66, 139);
-    border: 3px solid #c2002a;
-    margin-bottom: 2%;
-}
-
-.bottom-offer {
-    display: flex;
-    justify-content: space-between;
-    border: 3px solid rgb(147, 182, 123);
-    margin: 0px 3%;
-    /* не стал ставить ширину 495px по заданию. так как выглядит не очень*/
-}
-
-.offer-text {
-    margin-top: 40px;
-    margin-bottom: 10%;
-    border: 3px solid #ff7be4;
-    max-width: 35%;
-}
-
-.offer-text p {
-    padding-bottom: 5%;
-    padding-right: 5%;
-    color: darkgray;
-}
-
-.chat {
-    margin-top: 40px;
-    width: 10%;
-    max-height: 40px;
-    background-color: rgb(35, 5, 151);
-}
-
-.chat p {
-    padding: 10%;
-    color: white;
-    text-align: center;
+.bottom__item {
+    flex-grow: 1;
 }
 
 .footer-wrapper {
     display: flex;
     flex-direction: column;
-    border-top: 4px;
-    border: 3px solid rgb(147, 182, 123);
     margin: 0px 3%;
 }
 
@@ -278,6 +260,31 @@ ul.ul-footer {
 
 .ul-footer li:nth-child(3) {
     background-image: url("../img/email-icon.png");
+}
+
+.bottom__right {
+    padding-left: 113px;
+}
+
+.bottom__heading {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin-top: 91px;
+    width: 50%;
+    margin-bottom: 32px;
+}
+
+.text__bottom {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.6;
+    width: 60%;
 }
 
 /* -------------------------------------------------------- */
@@ -387,7 +394,3 @@ iframe {
     max-width: 100%;
     min-height: 95%;
 }
-
-/* ----------- */
-
-/* block container to center and limit width of all content*/
