@@ -12,70 +12,69 @@
 <body>
     <div class="wrapper">
         <div class="top-wrapper">
-            <div class="container">
-                <nav>
+            <div>
+                <nav class="container">
                     <ul class="header">
                         <li><a href="index.html"><img src="img/logo.svg" alt="logo"></a></li>
                         <li><a href="contacts.html"><img src="img/contacts.svg" alt="contacts"></a></li>
                     </ul>
                 </nav>
-            </div>
-            <!--  Contact Us ------------>
-            <div class="container contact-us">
-                <div class="heading-wrapper">
-                    <h1 class="first-heading">Contact Us</h1>
+                <div class="contact-us">
+                    <div class="container">
+                        <h1 class="contact-us__heading">Contact Us</h1>
+                        <p class="contact-us__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+
                 </div>
-                <p class="project-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque quaerat
-                    fugiat
-                    possimus, nobis
-                    reprehenderit aperiam hic.</p>
             </div>
-            <!-- ---------------------- -->
             <div class="container">
                 <div class="content">
                     <!-- address ------------------------------ -->
                     <div class="service">
-                        <div class="image-wrapper"><img class="image" src="img/pent.jpg" alt="pentagon"></div>
-                        <div class="service-content">
-                            <h4 class="tinyheader">Address</h4>
-                            <p class="paragraph">USA Defense Pentagon, Washington, D.C.</p>
+                        <img class="service__image" src="img/cont_page_img/service_img.svg" alt="service_image">
+                        <div class="service__contacts">
+                            <div class="service__content">
+                                <h4 class="contacts__tinyheader">Address</h4>
+                                <p class="service__text">Id convallis placerat sit sed duis id amet volutpat quam a,
+                                    pharetra.</p>
+                            </div>
+
+                            <div class="service__content">
+                                <h4 class="contacts__tinyheader">Phone</h4>
+                                <ul class="service__phones">
+                                    <li class="service__list"><a href="tel:+7-812-7313-4321">+7-812-7313-4321</a></li>
+                                    <li class="service__list"><a href="tel:+7-817-0000-1234">+7-817-0000-1234</a></li>
+                                </ul>
+                            </div>
+                            <div class="service__content">
+                                <h4 class="contacts__tinyheader">Online service</h4>
+                                <ul class="service__web">
+                                    <li class="service__list"><a href="#" target="_blank">www.site.com</a></li>
+                                    <li class="service__list"><a href="hello.site@gmail.com">hello.site@gmail.com</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
 
-                        <div class="service-content">
-                            <h4 class="tinyheader">Phone</h4>
-                            <ul>
-                                <li><a href="tel:+1 703-697-1776">phone: +1 703-697-1776</a></li>
-                                <li><a href="tel:+1 703-697-1777">phone: +1 703-697-1777</a></li>
-                            </ul>
-                        </div>
-                        <div class="service-content">
-                            <h4 class="tinyheader">Online service</h4>
-                            <ul>
-                                <li><a href="https://www.usa.gov/federal-agencies/u-s-department-of-defense"
-                                        target="_blank">our
-                                        web
-                                        site</a></li>
-                                <li><a href="mailto:mail@mail.ru"><span class="long-email">e-mail:
-                                            pfpa.pentagon.cco.mbx.general@mail.mil</span> </a></li>
-                            </ul>
-                        </div>
 
                     </div>
                     <!-- form ------------------------------- -->
                     <form class="form" action="#" method="POST" enctype="multipart/form-data">
-                        <h4 class="tinyheader">Send us message</h4>
+                        <h4 class="contacts__tinyheader mobile__text">Send us message</h4>
                         <div>
-                            <p class="form-paragraph">Full name </p>
-                            <input class="input" name="username" type="text" placeholder="Vasya Pupkin" tabindex="1">
+                            <p class="form__text">Full name </p>
+                            <input class="input" name="username" type="text" placeholder="Your Name" tabindex="1">
                         </div>
                         <div>
-                            <p class="form-paragraph">Email</p>
-                            <input class="input" name="usermail" type="email" placeholder="vasya@gmail.com"
-                                tabindex="2">
+                            <p class="form__text">Email</p>
+                            <input class="input" name="usermail" type="email" placeholder="Your Email" tabindex="2">
                         </div>
                         <div>
-                            <p class="form-paragraph">Message</p>
-                            <textarea class="input" name="message" tabindex="3"></textarea>
+                            <p class="form__text">Message</p>
+                            <textarea class=" input text__window " name="message" tabindex="3"
+                                placeholder="Your Message"></textarea>
                         </div>
                         <div><button class="subbutton" tabindex="4" type="submit">submit</button></div>
                     </form>
