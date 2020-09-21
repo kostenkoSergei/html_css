@@ -759,8 +759,8 @@ iframe {
         width: 100%;
     }
     .service {
-        width: 100%;
-        padding-left: 40px;
+        width: 360px;
+        padding-left: 32px;
     }
     .form {
         width: 343px;
