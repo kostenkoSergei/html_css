@@ -79,7 +79,9 @@ body {
     color: #222222;
 }
 
-.project {}
+.project {
+    margin-bottom: 112px;
+}
 
 .project__item {
     position: relative;
@@ -215,7 +217,6 @@ body {
 
 .bottom-wrapper {
     background: #316099;
-    margin-top: 112px;
 }
 
 .bottom__offer {
@@ -329,6 +330,9 @@ body {
     .card {
         margin-bottom: 32px;
     }
+    .project {
+        margin-bottom: 109px;
+    }
     .footer__info {
         flex-direction: column;
     }
@@ -410,6 +414,9 @@ body {
         margin-bottom: 32px;
         width: 100%;
     }
+    .project {
+        margin-bottom: 64px;
+    }
     .text__project {
         width: 100%;
     }
@@ -432,9 +439,6 @@ body {
     .project__item_margin {
         margin-right: 0;
         margin-bottom: 16px;
-    }
-    .bottom-wrapper {
-        margin-top: 64px;
     }
     .bottom__offer {
         display: flex;
@@ -615,6 +619,7 @@ body {
 .map {
     width: 90%;
     margin-left: 60px;
+    margin-bottom: 112px;
 }
 
 iframe {
@@ -660,6 +665,10 @@ iframe {
     margin-bottom: 32px;
 }
 
+.input:last-child {
+    margin-bottom: 0;
+}
+
 .text__window {
     width: 100%;
     height: 144px;
@@ -691,7 +700,6 @@ iframe {
     width: 100%;
     height: 72px;
     margin-top: 72px;
-    margin-top: 56px;
 }
 
 /* contacts page tablet version*/
@@ -715,16 +723,18 @@ iframe {
         width: 520px;
         margin-bottom: 64px;
     }
+    .subbutton {
+        height: 70px;
+        margin-top: 70px;
+    }
     .contacts__tinyheader {
         width: 20%;
-    }
-    .bottom-wrapper {
-        margin-top: 64px;
     }
     .map {
         width: 100%;
         margin: 0;
         align-self: center;
+        margin-bottom: 64px;
     }
     .service__text {
         width: 100%;
@@ -771,18 +781,17 @@ iframe {
         font-size: 14px;
     }
     .subbutton {
-        padding-top: 15px;
-        padding-bottom: 15px;
+        height: 46px;
+        padding-top: 0;
+        padding-bottom: 0;
         width: 100%;
         margin-top: 46px;
-    }
-    .bottom-wrapper {
-        margin-top: 32px;
     }
     .map {
         width: 100%;
         margin: 0;
         align-self: center;
+        margin-bottom: 32px;
     }
     .contact-us {
         margin-bottom: 32px;
