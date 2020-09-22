@@ -618,9 +618,13 @@ body {
 }
 
 .map {
-    width: 90%;
-    margin-left: 60px;
+    width: 1050px;
+    margin: 0 auto;
     margin-bottom: 112px;
+}
+
+.map__size {
+    height: 480px;
 }
 
 iframe {
@@ -733,9 +737,11 @@ iframe {
     }
     .map {
         width: 100%;
-        margin: 0;
-        align-self: center;
+        margin: 0 auto;
         margin-bottom: 64px;
+    }
+    .map__size {
+        height: 392px;
     }
     .service__text {
         width: 100%;
@@ -758,9 +764,18 @@ iframe {
         line-height: 30px;
         width: 100%;
     }
+    .contacts__tinyheader {
+        width: 60%;
+    }
     .service {
         width: 360px;
         padding-left: 32px;
+    }
+    .service__text {
+        width: 90%;
+    }
+    .service__content {
+        margin-bottom: 0;
     }
     .form {
         width: 343px;
@@ -790,9 +805,11 @@ iframe {
     }
     .map {
         width: 100%;
-        margin: 0;
-        align-self: center;
+        margin: 0 auto;
         margin-bottom: 32px;
+    }
+    .map__size {
+        height: 349px;
     }
     .contact-us {
         margin-bottom: 32px;
